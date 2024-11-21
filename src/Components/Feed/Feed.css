@@ -1,0 +1,46 @@
+.feed{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-column-gap:16px;
+    grid-row-gap:30px;
+    margin-top: 15px;
+}
+.card img{
+    width: 100%;
+    border-radius: 5px;
+}
+.card h2{
+    font-size: 16px;
+    font-weight: 600;
+    color:#000;
+    margin: 5px 0;
+}
+.card h3{
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin: 6px 0;
+}
+.card p{
+    font-size: 14px;
+}
+.feed-footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .feed-footer p {
+    margin: 5px 0;
+  }
+  @media (max-width: 768px) {
+    .feed-footer {
+      font-size: 12px;
+      padding: 8px;
+    }
+  }
+    

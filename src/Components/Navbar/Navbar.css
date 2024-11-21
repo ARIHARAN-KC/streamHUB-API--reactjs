@@ -1,0 +1,110 @@
+/* General Nav Bar Styles */
+nav {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between;
+    padding: 10px 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Left Section: Menu Icon and Logo */
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left .menu-icon {
+    width: 22px;
+    margin-right: 25px;
+}
+
+.nav-left .logo {
+    width: 130px;
+}
+
+/* Middle Section: Search Box */
+.nav-middle {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-middle .search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 25px;
+    width: 400px; /* Set width of search box */
+}
+
+.nav-middle .search-box input {
+    width: 100%; /* Ensure input takes up the remaining space */
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding: 8px;
+}
+
+.nav-middle .search-box img {
+    width: 15px;
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Right Section: User Icon and Other Elements */
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right img {
+    width: 25px;
+    margin-right: 10px; /* Space between icons */
+}
+
+.nav-right .user-icon {
+    width: 35px;
+    height: 35px; /* Make sure the icon is round */
+    border-radius: 50%;
+}
+
+/* Add a hover effect for icons */
+.nav-left .menu-icon:hover,
+.nav-middle .search-box img:hover,
+.nav-right img:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-middle .search-box {
+        width: 100%; /* Make search box responsive */
+        margin-top: 10px;
+    }
+
+    .nav-left .logo {
+        width: 100px; /* Adjust logo size on small screens */
+    }
+
+    .nav-right {
+        margin-top: 10px; /* Add some space between right section and the middle */
+    }
+
+    .nav-right img {
+        width: 20px;
+    }
+
+    .nav-right .user-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
